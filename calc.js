@@ -67,7 +67,7 @@
     var rentingCost = fetchValue('RentingCost');
     
     var minHours = Math.ceil(buyingCostFixed / (rentingCost - buyingCostVariable));
-    $('#result').val(minHours);
+    $('#result').text(minHours);
   }
   
   function init() {
