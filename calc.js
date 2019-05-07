@@ -76,7 +76,11 @@
       var elem = $('#param_' + name);
       
       elem.children('label').text(param.caption);
-      elem.children('input').val(param.default);
+      elem.children('input')
+        .attr('type', 'number')
+        .attr('step', '0.01')
+        .val(param.default)
+      ;
     }
     
     $('#calc').click(calculate);
