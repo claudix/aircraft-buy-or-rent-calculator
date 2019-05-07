@@ -43,7 +43,7 @@
     var param = params[name];
     if (!param) throw "Undefined parameter: " + name;
     
-    var value = elem.children('input').val();
+    var value = $('#param_' + name).children('input').val();
     if ((value = parseFloat(value)) == NaN) {
       alert("Invalid values. Please check them and try again");
       throw "Invalid values";
