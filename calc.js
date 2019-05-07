@@ -84,6 +84,7 @@
     }
     
     $('#calc').click(calculate);
+    calculate();
   }
   
   window.Calc = {
