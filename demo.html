@@ -1,8 +1,46 @@
 <!doctype html>
 <html>
 <head>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script language="javascript" src="calc.js"></script>
+  <script language="javascript">
+    $(document).ready(function(){
+      Calc.init();
+    });
+  </script>
 </head>
 <body>
-Hello
+  <div id="param_AircraftPrice">
+    <label></label>: <input>
+  </div>
+  <div id="param_RentingCost">
+    <label></label>: <input>
+  </div>
+  <div id="param_InsuranceCost">
+    <label></label>: <input>
+  </div>
+  <div id="param_HangarCost">
+    <label></label>: <input>
+  </div>
+  <div id="param_AircraftDepreciation">
+    <label></label>: <input>
+  </div>
+  <div id="param_LabourMaintenanceCostPer50Hours">
+    <label></label>: <input>
+  </div>
+  <div id="param_MaterialsMaintenanceCostPer50Hours">
+    <label></label>: <input>
+  </div>
+  <div id="param_FuelConsumptionPerHour">
+    <label></label>: <input>
+  </div>
+  <div id="param_FuelPricePerLiter">
+    <label></label>: <input>
+  </div>
+  <p>
+    Result: You should fly a minimum of <label id="result"></label> hours per year to be the purchasing option worthy.
+  </p>
+  <button id="calc">Calculate</button>
+  
 </body>
 </html>
